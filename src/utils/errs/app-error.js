@@ -1,5 +1,4 @@
 
-
 class AppError extends Error{
     constructor(
         name,
