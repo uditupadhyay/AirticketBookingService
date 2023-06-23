@@ -1,0 +1,19 @@
+1- npm init
+2- npm i express
+3- npm i body-parser
+4- npm i http-status-codes
+5- npm i mysql2
+7- npm i sequelize sequelize-cli
+8- npm i dotenv
+9- npm i nodemon
+10- npm i morgan
+
+
+For db setup
+
+1- npx sequelize init - it will create migration,model,config folder put them in src folder
+2- set password in config.json and db name which came from running above cmd.
+3- npx sequelize db:create - it will create the database.
+4- npx sequelize model:generate -- name Booking -- attributes flightId:integer,userId:integer,status:enum - it will create file in model and migartion.
+5- set all the values in model and migration files.
+6- npx sequelize db:migrate -- now we can able to see this table in db
