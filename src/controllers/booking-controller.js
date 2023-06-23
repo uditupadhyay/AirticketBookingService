@@ -7,7 +7,7 @@ const create=async(req,res) => {
     try {
         const response=await bookingService.createBooking(req.body);
         return res.status(StatusCodes.Ok).json({
-            message:'Successfully copleted booking',
+            message:'Successfully completed booking',
             success:true,
             err:{},
             data:response

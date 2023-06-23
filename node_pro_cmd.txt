@@ -1,3 +1,4 @@
+FOR BOOKING SERVICE
 1- npm init
 2- npm i express
 3- npm i body-parser
@@ -7,6 +8,7 @@
 8- npm i dotenv
 9- npm i nodemon
 10- npm i morgan
+11- npm i axios
 
 
 For db setup
@@ -17,3 +19,7 @@ For db setup
 4- npx sequelize model:generate -- name Booking -- attributes flightId:integer,userId:integer,status:enum - it will create file in model and migartion.
 5- set all the values in model and migration files.
 6- npx sequelize db:migrate -- now we can able to see this table in db
+7- npx sequelize migration:create --name modify_bookings_add_new_fields  -- (if forget to add some parameter in previous migration file)
+8- change parameter in model file manually.
+9- if u want to revert back to previous migration then npx sequelize db:migrate:undo
+10- 
